@@ -1,3 +1,3 @@
-# Travel Jorunal React Project
+# Travel Journal React Project
 
-Finished Travel journal project from the Scrimba course "Learn React". React components, React props, Sass.
+Finished Travel Journal project from the Scrimba course "Learn React". React components, React props, Sass.
