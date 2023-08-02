@@ -1,0 +1,60 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    padding: 2em 0;
+    .card-img {
+        aspect-ratio: 16/9;
+        width: 20em;
+        border-radius: 0.3em;
+        object-fit: cover;
+        transform: scale(1);
+        transition: all 650ms ease-in-out;
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11), 0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+        }
+    }
+    .card-info {
+        margin-left: 1em;
+        padding: 0.5em;
+        .card-location {
+            display: inline-block;
+            font-size: 0.75rem;
+            letter-spacing: 0.17em;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin: 0 1em 0 0.5em;
+            color: #2b283a;
+        }
+        .maps-link {
+            color: #918e9b;
+            font-size: 0.75rem;
+        }
+        .card-title {
+            margin: 0.25em 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .card-date {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        .card-desc {
+            max-width: 50rem;
+            margin-top: 2em;
+            font-weight: 400;
+            font-size: 0.75rem;
+            line-height: 150%;
+        }
+    }
+    @media (max-width: 768px) {
+        flex-direction: column;
+        .card-img {
+            width: 100% !important;
+        }
+        .card-info {
+            margin: 1em 0 0 0 !important;
+            padding: 0 !important;
+        }
+    }
+}

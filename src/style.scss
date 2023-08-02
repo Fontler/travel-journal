@@ -1,0 +1,40 @@
+@use 'reset.scss';
+
+body {
+    font-family: 'Inter';
+    scroll-behavior: smooth;
+}
+
+.location-list {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 3em;
+}
+
+.location-list > .card + .card {
+    padding: 2em 0;
+    border-top: 1px solid #918e9b;
+  }
+  
+  .location-list .card:first-child {
+    padding-top: 0;
+  }
+  
+  .location-list .card:last-child {
+    padding-bottom: 0;
+  }
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card-img {
+        width: 100% !important;
+    }
+
+    .card-info {
+        margin: 1em 0 0 0 !important;
+        padding: 0 !important;
+    }
+}
